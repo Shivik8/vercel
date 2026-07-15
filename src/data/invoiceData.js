@@ -1,0 +1,288 @@
+export const invoices = [
+  { id: '5100034385', companyCode: '1000', scanLocation: 'PR01-PAREL', parkedBy: '213293', invoiceType: 'ZSPO_GB_TP', vendorNum: '100012401', vendorName: 'AFOOZO PVT LTD', creationDate: '01.07.2026', amount: 75230.00, status: 'Pending', docType: 'RE', fiscalYear: '2027', headerText: '100001702330', refDoc: 'TPCL/26-27/28', purchaseDoc: '8200231868' },
+  { id: '5100034388', companyCode: '1000', scanLocation: 'DH06-DHARAVI', parkedBy: 'SAP_WFRT', invoiceType: 'ZSPO_GB_TP', vendorNum: '100015200', vendorName: 'AKANKSHA INFRACOM PVT LTD', creationDate: '01.07.2026', amount: 108555.33, status: 'In Review', docType: 'RE', fiscalYear: '2027', headerText: '100001702335', refDoc: 'TPCL/26-27/32', purchaseDoc: '8200231872' },
+  { id: '5100034389', companyCode: '1000', scanLocation: 'DH06-DHARAVI', parkedBy: 'SAP_WFRT', invoiceType: 'ZSPO_GB_TP', vendorNum: '100015200', vendorName: 'AKANKSHA INFRACOM PVT LTD', creationDate: '30.06.2026', amount: 94320.50, status: 'Pending', docType: 'RE', fiscalYear: '2027', headerText: '100001702336', refDoc: 'TPCL/26-27/33', purchaseDoc: '8200231873' },
+  { id: '5100034390', companyCode: '1000', scanLocation: 'DH06-DHARAVI', parkedBy: 'SAP_WFRT', invoiceType: 'ZSPO_GB_TP', vendorNum: '100017292', vendorName: 'DAKSH ENGINEERING CO.', creationDate: '30.06.2026', amount: 215780.00, status: 'Approved', docType: 'RE', fiscalYear: '2027', headerText: '100001702337', refDoc: 'TPCL/26-27/34', purchaseDoc: '8200231874' },
+  { id: '5100034391', companyCode: '1000', scanLocation: 'HO01-ADMINISTRATION', parkedBy: 'SAP_WFRT', invoiceType: 'ZSPO_GB_TP', vendorNum: '100017243', vendorName: 'Galaxy Buildcon', creationDate: '30.06.2026', amount: 342100.75, status: 'Pending', docType: 'RE', fiscalYear: '2027', headerText: '100001702338', refDoc: 'TPCL/26-27/35', purchaseDoc: '8200231875' },
+  { id: '5100034392', companyCode: '1000', scanLocation: 'DH06-DHARAVI', parkedBy: 'SAP_WFRT', invoiceType: 'ZSPO_GB_TP', vendorNum: '180007773', vendorName: 'HOLOFX CONSULTING PVT. LTD.', creationDate: '30.06.2026', amount: 58900.00, status: 'In Review', docType: 'RE', fiscalYear: '2027', headerText: '100001702339', refDoc: 'TPCL/26-27/36', purchaseDoc: '8200231876' },
+  { id: '5100034393', companyCode: '1000', scanLocation: 'HO01-ADMINISTRATION', parkedBy: 'SAP_WFRT', invoiceType: 'ZSPO_GB_TP', vendorNum: '180007773', vendorName: 'HOLOFX CONSULTING PVT. LTD.', creationDate: '30.06.2026', amount: 127450.25, status: 'Pending', docType: 'RE', fiscalYear: '2027', headerText: '100001702340', refDoc: 'TPCL/26-27/37', purchaseDoc: '8200231877' },
+  { id: '5100034394', companyCode: '1000', scanLocation: 'HO01-ADMINISTRATION', parkedBy: 'SAP_WFRT', invoiceType: 'ZSPO_GB_TP', vendorNum: '180007773', vendorName: 'HOLOFX CONSULTING PVT. LTD.', creationDate: '30.06.2026', amount: 89675.00, status: 'Approved', docType: 'RE', fiscalYear: '2027', headerText: '100001702341', refDoc: 'TPCL/26-27/38', purchaseDoc: '8200231878' },
+  { id: '5100034395', companyCode: '1000', scanLocation: 'HO01-ADMINISTRATION', parkedBy: 'SAP_WFRT', invoiceType: 'ZSPO_GB_TP', vendorNum: '100007362', vendorName: 'KUMAR FABRICATORS', creationDate: '01.07.2026', amount: 456200.00, status: 'In Review', docType: 'RE', fiscalYear: '2027', headerText: '100001702342', refDoc: 'TPCL/26-27/39', purchaseDoc: '8200231879' },
+  { id: '5100034396', companyCode: '1000', scanLocation: 'HO01-ADMINISTRATION', parkedBy: 'SAP_WFRT', invoiceType: 'ZPO_GLB_TP', vendorNum: '100014594', vendorName: 'KYOCERA DOCUMENT SOLUTION', creationDate: '01.07.2026', amount: 34780.50, status: 'Pending', docType: 'RE', fiscalYear: '2027', headerText: '100001702343', refDoc: 'TPCL/26-27/40', purchaseDoc: '8200231880' },
+  { id: '5100034397', companyCode: '1000', scanLocation: 'DH06-DHARAVI', parkedBy: 'SAP_WFRT', invoiceType: 'ZSPO_GB_TP', vendorNum: '100014896', vendorName: 'LAKHANI SREEJA ENGINEERING CO', creationDate: '01.07.2026', amount: 198340.00, status: 'Approved', docType: 'RE', fiscalYear: '2027', headerText: '100001702344', refDoc: 'TPCL/26-27/41', purchaseDoc: '8200231881' },
+  { id: '5100034398', companyCode: '1000', scanLocation: 'DH06-DHARAVI', parkedBy: 'SAP_WFRT', invoiceType: 'ZSPO_GB_TP', vendorNum: '100014896', vendorName: 'LAKHANI SREEJA ENGINEERING CO', creationDate: '30.06.2026', amount: 67890.75, status: 'Pending', docType: 'RE', fiscalYear: '2027', headerText: '100001702345', refDoc: 'TPCL/26-27/42', purchaseDoc: '8200231882' },
+  { id: '5100034399', companyCode: '1000', scanLocation: 'DH06-DHARAVI', parkedBy: 'SAP_WFRT', invoiceType: 'ZSPO_GB_TP', vendorNum: '180002881', vendorName: 'M POWER INDIA PRIVATE LIMITED', creationDate: '01.07.2026', amount: 523400.00, status: 'In Review', docType: 'RE', fiscalYear: '2027', headerText: '100001702346', refDoc: 'TPCL/26-27/43', purchaseDoc: '8200231883' },
+  { id: '5100034400', companyCode: '1000', scanLocation: 'DH06-DHARAVI', parkedBy: 'SAP_WFRT', invoiceType: 'ZSPO_GB_TP', vendorNum: '180002881', vendorName: 'M POWER INDIA PRIVATE LIMITED', creationDate: '01.07.2026', amount: 145670.25, status: 'Pending', docType: 'RE', fiscalYear: '2027', headerText: '100001702347', refDoc: 'TPCL/26-27/44', purchaseDoc: '8200231884' },
+  { id: '5100034401', companyCode: '1000', scanLocation: 'DH06-DHARAVI', parkedBy: 'SAP_WFRT', invoiceType: 'ZSPO_GB_TP', vendorNum: '100006478', vendorName: 'NETCORE SOLUTIONS PVT. LTD.', creationDate: '30.06.2026', amount: 87650.00, status: 'Approved', docType: 'RE', fiscalYear: '2027', headerText: '100001702348', refDoc: 'TPCL/26-27/45', purchaseDoc: '8200231885' },
+  { id: '5100034402', companyCode: '1000', scanLocation: 'DH06-DHARAVI', parkedBy: 'SAP_WFRT', invoiceType: 'ZSPO_GB_TP', vendorNum: '100006478', vendorName: 'NETCORE SOLUTIONS PVT. LTD.', creationDate: '30.06.2026', amount: 265430.50, status: 'Pending', docType: 'RE', fiscalYear: '2027', headerText: '100001702349', refDoc: 'TPCL/26-27/46', purchaseDoc: '8200231886' },
+  { id: '5100034403', companyCode: '1000', scanLocation: 'TC01-TRANSMISSION CAPEX', parkedBy: 'SAP_WFRT', invoiceType: 'ZSPO_GB_TP', vendorNum: '100022473', vendorName: 'R.N.CABS PVT LTD', creationDate: '01.07.2026', amount: 156780.00, status: 'In Review', docType: 'RE', fiscalYear: '2027', headerText: '100001702350', refDoc: 'TPCL/26-27/47', purchaseDoc: '8200231887' },
+  { id: '5100034404', companyCode: '1000', scanLocation: 'TC01-TRANSMISSION CAPEX', parkedBy: 'SAP_WFRT', invoiceType: 'ZSPO_GB_TP', vendorNum: '100022473', vendorName: 'R.N.CABS PVT LTD', creationDate: '01.07.2026', amount: 412350.75, status: 'Pending', docType: 'RE', fiscalYear: '2027', headerText: '100001702351', refDoc: 'TPCL/26-27/48', purchaseDoc: '8200231888' },
+];
+
+export const vendorDetails = {
+  '100015200': {
+    vendorNumber: '100015200',
+    vendorName: 'AKANKSHA INFRACOM PVT LTD',
+    bankName: 'KARNATAKA BANK LTD',
+    bankAccount: '0912000100387001',
+    bankNumber: 'KARB0000876',
+    street: 'OPPOSITE SAI LEELA HOTEL, GOREGAON WEST',
+    postalCode: '400063',
+    city: 'MUMBAI',
+    country: 'IN',
+    region: '13',
+  },
+  '100012401': {
+    vendorNumber: '100012401',
+    vendorName: 'AFOOZO PVT LTD',
+    bankName: 'HDFC BANK LTD',
+    bankAccount: '50200045678901',
+    bankNumber: 'HDFC0001234',
+    street: 'ANDHERI KURLA ROAD, ANDHERI EAST',
+    postalCode: '400069',
+    city: 'MUMBAI',
+    country: 'IN',
+    region: '13',
+  },
+  '100017292': {
+    vendorNumber: '100017292',
+    vendorName: 'DAKSH ENGINEERING CO.',
+    bankName: 'STATE BANK OF INDIA',
+    bankAccount: '38912456780012',
+    bankNumber: 'SBIN0005678',
+    street: 'INDUSTRIAL AREA, TURBHE MIDC',
+    postalCode: '400705',
+    city: 'NAVI MUMBAI',
+    country: 'IN',
+    region: '13',
+  },
+  '100017243': {
+    vendorNumber: '100017243',
+    vendorName: 'Galaxy Buildcon',
+    bankName: 'ICICI BANK LTD',
+    bankAccount: '012345678901234',
+    bankNumber: 'ICIC0001234',
+    street: 'LINK ROAD, MALAD WEST',
+    postalCode: '400064',
+    city: 'MUMBAI',
+    country: 'IN',
+    region: '13',
+  },
+  '180007773': {
+    vendorNumber: '180007773',
+    vendorName: 'HOLOFX CONSULTING PVT. LTD.',
+    bankName: 'AXIS BANK LTD',
+    bankAccount: '917020012345678',
+    bankNumber: 'UTIB0002345',
+    street: 'BKC, BANDRA EAST',
+    postalCode: '400051',
+    city: 'MUMBAI',
+    country: 'IN',
+    region: '13',
+  },
+};
+
+export const recipientData = {
+  companyCode: '1000',
+  companyName: 'The Tata Power Co.',
+  street: "Corporate Center, Block 'B'",
+  postalCode: '400009',
+  city: 'Mumbai',
+  country: 'IN',
+  region: '13',
+};
+
+export const processOptions = [
+  { option: 'Delete and Re-enter', description: 'Delete and Re-enter as PO invoice (PO Invoice)', receivingActor: 'PO_AP_PROC_TP' },
+  { option: 'Refer', description: 'Refer to Info Provider', receivingActor: 'INFO_PROV_TP' },
+  { option: 'Refer', description: 'Refer to PO Invoice AP Processor', receivingActor: 'PO_AP_PROC_TP' },
+  { option: 'Refer', description: 'Refer to PO Invoice Requisitioner', receivingActor: 'REQUISI_TP' },
+  { option: 'Change/Post (PO)', description: 'Change/Post Invoice (PO)', receivingActor: 'PO_AP_PROC_TP' },
+  { option: 'Delete Invoice (PO)', description: 'Delete Invoice (PO)', receivingActor: 'PO_AP_PROC_TP' },
+  { option: 'Refer Back', description: 'Refer Back', receivingActor: 'PO_AP_PROC_TP' },
+];
+
+export const workflowHistory = [
+  { date: '01.07.2026', time: '08:56:34', user: 'Arvind Hanumant Pophale (201427)', action: 'Changed', status: 'OK' },
+  { date: '30.06.2026', time: '14:22:10', user: 'Parag Surve (213293)', action: 'Parked', status: 'OK' },
+  { date: '30.06.2026', time: '11:05:45', user: 'System', action: 'Created', status: 'OK' },
+];
+
+export const sidebarFolders = [
+  { name: 'Inbox', icon: 'inbox', children: [
+    { name: 'Unread Documents', count: 0 },
+    { name: 'Documents', count: 0 },
+    { name: 'Workflow', count: 1682, children: [
+      { name: 'Grouped according to task', children: [
+        { name: 'DP Document Dashboard' },
+        { name: 'Non-PO Invoice Dashboard' },
+        { name: 'PO Invoice Dashboard (Line Level)' },
+        { name: 'PO Parked Invoice Dashboard', active: true },
+      ]},
+      { name: 'Grouped according to content' },
+      { name: 'Grouped according to content type' },
+      { name: 'Grouped according to sort key' },
+    ]},
+    { name: 'Overdue entries', count: 0 },
+    { name: 'Deadline Messages', count: 0 },
+    { name: 'Entries with Errors', count: 0 },
+  ]},
+  { name: 'Outbox', icon: 'send' },
+  { name: 'Resubmission', icon: 'clock' },
+  { name: 'Private folders', icon: 'folder' },
+  { name: 'Shared folders', icon: 'users' },
+  { name: 'Subscribed Folders', icon: 'bookmark' },
+  { name: 'Trash', icon: 'trash' },
+  { name: 'Shared trash', icon: 'trash-2' },
+];
+
+export const invoiceChecklist = [
+  { srNo: 1, title: 'COMPANY NAME', value: 'THE TATA POWER CO. LTD.' },
+  { srNo: 2, title: 'SCANNING LOCATION / DEPARTMENT', value: 'DH01 - DIST. CAPEX CONTRACT' },
+  { srNo: 3, title: 'VENDOR CODE', value: '100015200' },
+  { srNo: 4, title: 'VENDOR NAME', value: 'AKANKSHA INFRACOM PVT. LTD.' },
+  { srNo: 5, title: 'INVOICE TYPE', value: 'SERVICE' },
+  { srNo: 6, title: 'PO NUMBER', value: '8200231872' },
+  { srNo: 7, title: 'EMPLOYEE NO & NAME OF ENGINEER', value: '213046 Deepak Kumbhar' },
+  { srNo: 8, title: 'DELIVERY CHALLAN NO (IF SUPPLY)', value: 'NA' },
+];
+
+export const validationRules = [
+  {
+    category: 'Document Integrity',
+    rules: [
+      { id: 'DI-001', name: 'Invoice number format validation' },
+      { id: 'DI-002', name: 'Document date within fiscal period' },
+      { id: 'DI-003', name: 'Mandatory fields completeness check' },
+      { id: 'DI-004', name: 'Header text reference consistency' },
+      { id: 'DI-005', name: 'Scan location code validation' },
+    ],
+  },
+  {
+    category: 'Vendor Compliance',
+    rules: [
+      { id: 'VC-001', name: 'Vendor master data active status' },
+      { id: 'VC-002', name: 'Vendor bank details verification' },
+      { id: 'VC-003', name: 'Vendor GST registration validity' },
+      { id: 'VC-004', name: 'Vendor payment block check' },
+    ],
+  },
+  {
+    category: 'PO Matching',
+    rules: [
+      { id: 'PM-001', name: 'Purchase order existence validation' },
+      { id: 'PM-002', name: 'PO line item quantity tolerance' },
+      { id: 'PM-003', name: 'PO price variance within threshold' },
+      { id: 'PM-004', name: 'Goods receipt confirmation status' },
+    ],
+  },
+  {
+    category: 'Tax & Fiscal',
+    rules: [
+      { id: 'TF-001', name: 'Tax code applicability verification' },
+      { id: 'TF-002', name: 'GST amount computation accuracy' },
+      { id: 'TF-003', name: 'Withholding tax applicability check' },
+      { id: 'TF-004', name: 'Fiscal year period open status' },
+    ],
+  },
+  {
+    category: 'Amount Verification',
+    rules: [
+      { id: 'AV-001', name: 'Invoice total arithmetic validation' },
+      { id: 'AV-002', name: 'Currency and exchange rate check' },
+      { id: 'AV-003', name: 'Amount tolerance limit compliance' },
+    ],
+  },
+  {
+    category: 'Duplicate Detection',
+    rules: [
+      { id: 'DD-001', name: 'Duplicate invoice reference check' },
+      { id: 'DD-002', name: 'Same vendor same-amount recent window' },
+    ],
+  },
+];
+
+export const poDetails = {
+  '8200231868': { poNumber: '8200231868', vendorNum: '100012401', vendorName: 'AFOOZO PVT LTD', netValue: 75230.00, currency: 'INR', paymentTerms: 'NT30 — Net 30 Days', taxCode: 'V1 — Input Tax 18%', retentionPct: 5, retentionAmt: 3761.50, bgRequired: true, bgStatus: 'Valid', bgExpiry: '31.12.2026', ldApplicable: false, ldStatus: 'Not Applicable', attachments: 3, orderValue: 4523500.00, bgCalculatedOn: 'Total Order Value', fivePercentOfOrder: 226175.00, previousCPBGDeducted: 75230.00, remainingToDeduct: 150945.00, cbgPercent: 5, ldSlaFlag: false, ldRate: 0.5, tdsRate: 2,
+    contractType: 'Contract Release Ord', createdBy: 'Rajesh Patil', docDate: '10.06.2026', department: '045', olaRefNo: '9200033290', olaDate: '10.06.2026', initialReleaseDate: '10.06.2026', latestReleaseDate: '10.06.2026', tenure: '36 Months',
+    paymentTermsText: '100% of the invoice amount shall be released within 30 days from the date of submission of error free invoice supported by all required documents.',
+    bankGuaranteeText: 'Bank Guarantee is applicable. Contractor shall submit CPBG of 5% of Annual Contract Value within 15 days from OLA date.',
+    safetyRetentionText: 'Safety Retention shall be as per Safety Terms & Conditions.',
+    items: [{ sNo: 10, itemType: 'F', category: 'D', shortText: 'Office maintenance and facility management services', poQuantity: '1 AU', delivDate: '10.09.2026', netPrice: 75230.00, currency: 'INR', per: 1, opu: 'AU', matlGroup: 'Cost Of Ser-Ot..', plant: 'Administration' }],
+    serviceEntries: [
+      { materialDoc: '5001580500', mvt: '101', shText: 'WE', itemPostingDate: '1 05.06.2026', entrySheet: 'AFZO8200231868', quantity: 1, amtInLocCur: 42130.00, oUn: 'EA', currency: 'INR', qtyInOPU: 1, orderPriceUnit: 'AU', amountCcy: 42130.00, entryDate: '20.06.2026', companyCode: '1000' },
+      { materialDoc: '5001580500', mvt: '101', shText: 'WE', itemPostingDate: '2 05.06.2026', entrySheet: 'AFZO8200231868', quantity: 1, amtInLocCur: 33100.00, oUn: 'EA', currency: 'INR', qtyInOPU: 1, orderPriceUnit: 'AU', amountCcy: 33100.00, entryDate: '20.06.2026', companyCode: '1000' },
+    ],
+    attachmentFiles: [{ icon: 'pdf', title: '8200231868_20260610_103022.pdf', createdOn: '10.06.2026', creatorName: 'Rajesh Patil', createdAt: '10:30:22' }],
+    conditions: [{ type: 'PBXX', description: 'Basic Price', rate: '75,230.00', currency: 'INR', amount: 75230.00 }, { type: 'JOCG', description: 'CGST 9%', rate: '9%', currency: 'INR', amount: 6770.70 }, { type: 'JOSG', description: 'SGST 9%', rate: '9%', currency: 'INR', amount: 6770.70 }],
+    gstDetails: { vendorGSTIN: '27AABCA1234F1ZP', companyGSTIN: '27AAACT0054A1Z1', hsnCode: '998519', supplyPlace: 'Maharashtra', cgstRate: 9, sgstRate: 9, igstRate: 0 },
+  },
+  '8200231872': { poNumber: '8200231872', vendorNum: '100015200', vendorName: 'AKANKSHA INFRACOM PVT LTD', netValue: 108555.33, currency: 'INR', paymentTerms: 'NT45 — Net 45 Days', taxCode: 'V1 — Input Tax 18%', retentionPct: 10, retentionAmt: 10855.53, bgRequired: true, bgStatus: 'Valid', bgExpiry: '30.06.2027', ldApplicable: true, ldStatus: 'No Deduction', attachments: 5, orderValue: 2399000.00, bgCalculatedOn: 'Annualized OLA Value Without GST', fivePercentOfOrder: 239900.04, previousCPBGDeducted: 196892.78, remainingToDeduct: 43007.22, cbgPercent: 1.32, ldSlaFlag: true, ldRate: 0.5, tdsRate: 2,
+    contractType: 'Contract Release Ord', createdBy: 'Deepak Kumbhar', docDate: '17.06.2026', department: '058', olaRefNo: '9200033303', olaDate: '17.06.2026', initialReleaseDate: '17.06.2026', latestReleaseDate: '17.06.2026', tenure: '42 Months',
+    paymentTermsText: '100% of the invoice amount shall be released within 45 days from the date of submission of error free invoice supported by all required documents.',
+    bankGuaranteeText: 'Bank Guarantee is applicable in this Purchase Order. Contractor shall submit a Contract Performance Bank Guarantee (CPBG) of 10% of Annual Contract Value or INR 5.00 Lakhs (whichever is lower). CPBG shall be submitted within 15 days from the date of OLA as per approved format.',
+    safetyRetentionText: 'Safety Retention (If Applicable) shall be as per Safety Terms & Conditions.',
+    items: [{ sNo: 10, itemType: 'F', category: 'D', shortText: '33kV Dharavi to Raheja Hospital Cable Laying & Allied Works', poQuantity: '1 AU', delivDate: '18.08.2026', netPrice: 91996.04, currency: 'INR', per: 1, opu: 'AU', matlGroup: 'Cost Of Ser-Ot..', plant: 'Distribution' }],
+    serviceEntries: [
+      { materialDoc: '5001580513', mvt: '101', shText: 'WE', itemPostingDate: '1 19.06.2026', entrySheet: 'AIPL8200231872', quantity: 1, amtInLocCur: 48480.30, oUn: 'EA', currency: 'INR', qtyInOPU: 1, orderPriceUnit: 'AU', amountCcy: 48480.30, entryDate: '26.06.2026', companyCode: '1000' },
+      { materialDoc: '5001580513', mvt: '101', shText: 'WE', itemPostingDate: '2 19.06.2026', entrySheet: 'AIPL8200231872', quantity: 3.800, amtInLocCur: 2847.11, oUn: 'M3', currency: 'INR', qtyInOPU: 3.800, orderPriceUnit: 'AU', amountCcy: 2847.11, entryDate: '26.06.2026', companyCode: '1000' },
+      { materialDoc: '5001580513', mvt: '101', shText: 'WE', itemPostingDate: '3 19.06.2026', entrySheet: 'AIPL8200231872', quantity: 8, amtInLocCur: 1057.76, oUn: 'M', currency: 'INR', qtyInOPU: 8, orderPriceUnit: 'AU', amountCcy: 1057.76, entryDate: '26.06.2026', companyCode: '1000' },
+      { materialDoc: '5001580513', mvt: '101', shText: 'WE', itemPostingDate: '4 19.06.2026', entrySheet: 'AIPL8200231872', quantity: 11400, amtInLocCur: 1607.79, oUn: 'M3', currency: 'INR', qtyInOPU: 11400, orderPriceUnit: 'AU', amountCcy: 1607.79, entryDate: '26.06.2026', companyCode: '1000' },
+      { materialDoc: '5001580512', mvt: '101', shText: 'WE', itemPostingDate: '5 19.06.2026', entrySheet: 'AIPL8200231872', quantity: 400, amtInLocCur: 10577.52, oUn: 'BAG', currency: 'INR', qtyInOPU: 400, orderPriceUnit: 'AU', amountCcy: 10577.52, entryDate: '26.06.2026', companyCode: '1000' },
+      { materialDoc: '5001580512', mvt: '101', shText: 'WE', itemPostingDate: '6 19.06.2026', entrySheet: 'AIPL8200231872', quantity: 3, amtInLocCur: 9255.34, oUn: 'TP', currency: 'INR', qtyInOPU: 3, orderPriceUnit: 'AU', amountCcy: 9255.34, entryDate: '26.06.2026', companyCode: '1000' },
+      { materialDoc: '5001580513', mvt: '101', shText: 'WE', itemPostingDate: '7 19.06.2026', entrySheet: 'AIPL8200231872', quantity: 5, amtInLocCur: 8814.60, oUn: 'SFT', currency: 'INR', qtyInOPU: 5, orderPriceUnit: 'AU', amountCcy: 8814.60, entryDate: '26.06.2026', companyCode: '1000' },
+      { materialDoc: '5001580512', mvt: '101', shText: 'WE', itemPostingDate: '8 19.06.2026', entrySheet: 'AIPL8200231872', quantity: 1, amtInLocCur: 1939.22, oUn: 'EA', currency: 'INR', qtyInOPU: 1, orderPriceUnit: 'AU', amountCcy: 1939.22, entryDate: '26.06.2026', companyCode: '1000' },
+      { materialDoc: '5001580512', mvt: '101', shText: 'WE', itemPostingDate: '9 19.06.2026', entrySheet: 'AIPL8200231872', quantity: 2, amtInLocCur: 1939.22, oUn: 'SFT', currency: 'INR', qtyInOPU: 2, orderPriceUnit: 'AU', amountCcy: 1939.22, entryDate: '26.06.2026', companyCode: '1000' },
+    ],
+    attachmentFiles: [
+      { icon: 'pdf', title: '8200231872_20260617_145545.pdf', createdOn: '17.06.2026', creatorName: 'Arvind Hanumant Pophale', createdAt: '14:55:45' },
+      { icon: 'pdf', title: 'SES_Approval_8200231872.pdf', createdOn: '19.06.2026', creatorName: 'Deepak Kumbhar', createdAt: '09:22:10' },
+      { icon: 'pdf', title: 'Invoice_AIPL_Jun2026.pdf', createdOn: '26.06.2026', creatorName: 'Vendor Portal', createdAt: '11:05:33' },
+    ],
+    conditions: [{ type: 'PBXX', description: 'Basic Price', rate: '91,996.04', currency: 'INR', amount: 91996.04 }, { type: 'JOCG', description: 'CGST 9%', rate: '9%', currency: 'INR', amount: 8279.64 }, { type: 'JOSG', description: 'SGST 9%', rate: '9%', currency: 'INR', amount: 8279.64 }, { type: 'ZTCS', description: 'TCS 0.1%', rate: '0.1%', currency: 'INR', amount: 91.99 }],
+    gstDetails: { vendorGSTIN: '27AADCV8052D1ZC', companyGSTIN: '27AAACT0054A1Z1', hsnCode: '998433', supplyPlace: 'Maharashtra', cgstRate: 9, sgstRate: 9, igstRate: 0 },
+    deliveryInfo: { deliveryDate: '18.08.2026', deliveryStatus: 'On Track', grNumber: '5001580513', grDate: '19.06.2026', goodsReceiptStatus: 'Received' },
+  },
+  '8200231873': { poNumber: '8200231873', vendorNum: '100015200', vendorName: 'AKANKSHA INFRACOM PVT LTD', netValue: 94320.50, currency: 'INR', paymentTerms: 'NT30 — Net 30 Days', taxCode: 'V1 — Input Tax 18%', retentionPct: 5, retentionAmt: 4716.03, bgRequired: false, bgStatus: 'Not Required', bgExpiry: '', ldApplicable: false, ldStatus: 'Not Applicable', attachments: 2, orderValue: 2980000.00, bgCalculatedOn: 'Total Order Value', fivePercentOfOrder: 149000.00, previousCPBGDeducted: 42100.00, remainingToDeduct: 106900.00, cbgPercent: 5, ldSlaFlag: false, ldRate: 0.5, tdsRate: 2 },
+  '8200231874': { poNumber: '8200231874', vendorNum: '100017292', vendorName: 'DAKSH ENGINEERING CO.', netValue: 215780.00, currency: 'INR', paymentTerms: 'NT30 — Net 30 Days', taxCode: 'V1 — Input Tax 18%', retentionPct: 5, retentionAmt: 10789.00, bgRequired: true, bgStatus: 'Valid', bgExpiry: '31.03.2027', ldApplicable: true, ldStatus: 'No Deduction', attachments: 4, orderValue: 6720000.00, bgCalculatedOn: 'Total Order Value', fivePercentOfOrder: 336000.00, previousCPBGDeducted: 112500.00, remainingToDeduct: 223500.00, cbgPercent: 5, ldSlaFlag: false, ldRate: 0.5, tdsRate: 2 },
+  '8200231875': { poNumber: '8200231875', vendorNum: '100017243', vendorName: 'Galaxy Buildcon', netValue: 342100.75, currency: 'INR', paymentTerms: 'NT45 — Net 45 Days', taxCode: 'V1 — Input Tax 18%', retentionPct: 10, retentionAmt: 34210.08, bgRequired: true, bgStatus: 'Expiring Soon', bgExpiry: '15.08.2026', ldApplicable: true, ldStatus: 'Under Review', attachments: 6, orderValue: 5180000.00, bgCalculatedOn: 'Total Order Value', fivePercentOfOrder: 259000.00, previousCPBGDeducted: 89500.00, remainingToDeduct: 169500.00, cbgPercent: 5, ldSlaFlag: true, ldRate: 0.5, tdsRate: 2 },
+  '8200231876': { poNumber: '8200231876', vendorNum: '180007773', vendorName: 'HOLOFX CONSULTING PVT. LTD.', netValue: 58900.00, currency: 'INR', paymentTerms: 'NT30 — Net 30 Days', taxCode: 'V1 — Input Tax 18%', retentionPct: 0, retentionAmt: 0, bgRequired: false, bgStatus: 'Not Required', bgExpiry: '', ldApplicable: false, ldStatus: 'Not Applicable', attachments: 2, orderValue: 1250000.00, bgCalculatedOn: 'Total Order Value', fivePercentOfOrder: 62500.00, previousCPBGDeducted: 0, remainingToDeduct: 62500.00, cbgPercent: 5, ldSlaFlag: false, ldRate: 0.5, tdsRate: 2 },
+  '8200231877': { poNumber: '8200231877', vendorNum: '180007773', vendorName: 'HOLOFX CONSULTING PVT. LTD.', netValue: 127450.25, currency: 'INR', paymentTerms: 'NT30 — Net 30 Days', taxCode: 'V1 — Input Tax 18%', retentionPct: 5, retentionAmt: 6372.51, bgRequired: false, bgStatus: 'Not Required', bgExpiry: '', ldApplicable: false, ldStatus: 'Not Applicable', attachments: 3, orderValue: 2450000.00, bgCalculatedOn: 'Total Order Value', fivePercentOfOrder: 122500.00, previousCPBGDeducted: 34200.00, remainingToDeduct: 88300.00, cbgPercent: 5, ldSlaFlag: false, ldRate: 0.5, tdsRate: 2 },
+  '8200231878': { poNumber: '8200231878', vendorNum: '180007773', vendorName: 'HOLOFX CONSULTING PVT. LTD.', netValue: 89675.00, currency: 'INR', paymentTerms: 'NT30 — Net 30 Days', taxCode: 'V1 — Input Tax 18%', retentionPct: 5, retentionAmt: 4483.75, bgRequired: true, bgStatus: 'Valid', bgExpiry: '28.02.2027', ldApplicable: false, ldStatus: 'Not Applicable', attachments: 3, orderValue: 1890000.00, bgCalculatedOn: 'Total Order Value', fivePercentOfOrder: 94500.00, previousCPBGDeducted: 28400.00, remainingToDeduct: 66100.00, cbgPercent: 5, ldSlaFlag: false, ldRate: 0.5, tdsRate: 2 },
+  '8200231879': { poNumber: '8200231879', vendorNum: '100007362', vendorName: 'KUMAR FABRICATORS', netValue: 456200.00, currency: 'INR', paymentTerms: 'NT45 — Net 45 Days', taxCode: 'V1 — Input Tax 18%', retentionPct: 10, retentionAmt: 45620.00, bgRequired: true, bgStatus: 'Valid', bgExpiry: '30.09.2027', ldApplicable: true, ldStatus: 'No Deduction', attachments: 7, orderValue: 8500000.00, bgCalculatedOn: 'Total Order Value', fivePercentOfOrder: 425000.00, previousCPBGDeducted: 156000.00, remainingToDeduct: 269000.00, cbgPercent: 5, ldSlaFlag: true, ldRate: 0.5, tdsRate: 2 },
+  '8200231880': { poNumber: '8200231880', vendorNum: '100014594', vendorName: 'KYOCERA DOCUMENT SOLUTION', netValue: 34780.50, currency: 'INR', paymentTerms: 'NT30 — Net 30 Days', taxCode: 'V0 — Input Tax 0%', retentionPct: 0, retentionAmt: 0, bgRequired: false, bgStatus: 'Not Required', bgExpiry: '', ldApplicable: false, ldStatus: 'Not Applicable', attachments: 2, orderValue: 780000.00, bgCalculatedOn: 'Total Order Value', fivePercentOfOrder: 39000.00, previousCPBGDeducted: 0, remainingToDeduct: 39000.00, cbgPercent: 5, ldSlaFlag: false, ldRate: 0.5, tdsRate: 2 },
+  '8200231881': { poNumber: '8200231881', vendorNum: '100014896', vendorName: 'LAKHANI SREEJA ENGINEERING CO', netValue: 198340.00, currency: 'INR', paymentTerms: 'NT30 — Net 30 Days', taxCode: 'V1 — Input Tax 18%', retentionPct: 5, retentionAmt: 9917.00, bgRequired: true, bgStatus: 'Valid', bgExpiry: '31.12.2026', ldApplicable: true, ldStatus: 'No Deduction', attachments: 4, orderValue: 4120000.00, bgCalculatedOn: 'Total Order Value', fivePercentOfOrder: 206000.00, previousCPBGDeducted: 67800.00, remainingToDeduct: 138200.00, cbgPercent: 5, ldSlaFlag: true, ldRate: 0.5, tdsRate: 2 },
+  '8200231882': { poNumber: '8200231882', vendorNum: '100014896', vendorName: 'LAKHANI SREEJA ENGINEERING CO', netValue: 67890.75, currency: 'INR', paymentTerms: 'NT30 — Net 30 Days', taxCode: 'V1 — Input Tax 18%', retentionPct: 5, retentionAmt: 3394.54, bgRequired: false, bgStatus: 'Not Required', bgExpiry: '', ldApplicable: false, ldStatus: 'Not Applicable', attachments: 2, orderValue: 1560000.00, bgCalculatedOn: 'Total Order Value', fivePercentOfOrder: 78000.00, previousCPBGDeducted: 21300.00, remainingToDeduct: 56700.00, cbgPercent: 5, ldSlaFlag: false, ldRate: 0.5, tdsRate: 2 },
+  '8200231883': { poNumber: '8200231883', vendorNum: '180002881', vendorName: 'M POWER INDIA PRIVATE LIMITED', netValue: 523400.00, currency: 'INR', paymentTerms: 'NT45 — Net 45 Days', taxCode: 'V1 — Input Tax 18%', retentionPct: 10, retentionAmt: 52340.00, bgRequired: true, bgStatus: 'Valid', bgExpiry: '30.06.2027', ldApplicable: true, ldStatus: 'No Deduction', attachments: 5, orderValue: 9250000.00, bgCalculatedOn: 'Total Order Value', fivePercentOfOrder: 462500.00, previousCPBGDeducted: 178200.00, remainingToDeduct: 284300.00, cbgPercent: 5, ldSlaFlag: true, ldRate: 0.5, tdsRate: 2 },
+  '8200231884': { poNumber: '8200231884', vendorNum: '180002881', vendorName: 'M POWER INDIA PRIVATE LIMITED', netValue: 145670.25, currency: 'INR', paymentTerms: 'NT30 — Net 30 Days', taxCode: 'V1 — Input Tax 18%', retentionPct: 5, retentionAmt: 7283.51, bgRequired: false, bgStatus: 'Not Required', bgExpiry: '', ldApplicable: false, ldStatus: 'Not Applicable', attachments: 3, orderValue: 3200000.00, bgCalculatedOn: 'Total Order Value', fivePercentOfOrder: 160000.00, previousCPBGDeducted: 45600.00, remainingToDeduct: 114400.00, cbgPercent: 5, ldSlaFlag: false, ldRate: 0.5, tdsRate: 2 },
+  '8200231885': { poNumber: '8200231885', vendorNum: '100006478', vendorName: 'NETCORE SOLUTIONS PVT. LTD.', netValue: 87650.00, currency: 'INR', paymentTerms: 'NT30 — Net 30 Days', taxCode: 'V1 — Input Tax 18%', retentionPct: 5, retentionAmt: 4382.50, bgRequired: true, bgStatus: 'Valid', bgExpiry: '31.03.2027', ldApplicable: false, ldStatus: 'Not Applicable', attachments: 3, orderValue: 1980000.00, bgCalculatedOn: 'Total Order Value', fivePercentOfOrder: 99000.00, previousCPBGDeducted: 31200.00, remainingToDeduct: 67800.00, cbgPercent: 5, ldSlaFlag: false, ldRate: 0.5, tdsRate: 2 },
+  '8200231886': { poNumber: '8200231886', vendorNum: '100006478', vendorName: 'NETCORE SOLUTIONS PVT. LTD.', netValue: 265430.50, currency: 'INR', paymentTerms: 'NT45 — Net 45 Days', taxCode: 'V1 — Input Tax 18%', retentionPct: 10, retentionAmt: 26543.05, bgRequired: true, bgStatus: 'Valid', bgExpiry: '30.09.2027', ldApplicable: true, ldStatus: 'No Deduction', attachments: 4, orderValue: 5670000.00, bgCalculatedOn: 'Total Order Value', fivePercentOfOrder: 283500.00, previousCPBGDeducted: 98700.00, remainingToDeduct: 184800.00, cbgPercent: 5, ldSlaFlag: true, ldRate: 0.5, tdsRate: 2 },
+  '8200231887': { poNumber: '8200231887', vendorNum: '100022473', vendorName: 'R.N.CABS PVT LTD', netValue: 156780.00, currency: 'INR', paymentTerms: 'NT30 — Net 30 Days', taxCode: 'V1 — Input Tax 18%', retentionPct: 5, retentionAmt: 7839.00, bgRequired: false, bgStatus: 'Not Required', bgExpiry: '', ldApplicable: false, ldStatus: 'Not Applicable', attachments: 3, orderValue: 3450000.00, bgCalculatedOn: 'Total Order Value', fivePercentOfOrder: 172500.00, previousCPBGDeducted: 52100.00, remainingToDeduct: 120400.00, cbgPercent: 5, ldSlaFlag: false, ldRate: 0.5, tdsRate: 2 },
+  '8200231888': { poNumber: '8200231888', vendorNum: '100022473', vendorName: 'R.N.CABS PVT LTD', netValue: 412350.75, currency: 'INR', paymentTerms: 'NT45 — Net 45 Days', taxCode: 'V1 — Input Tax 18%', retentionPct: 10, retentionAmt: 41235.08, bgRequired: true, bgStatus: 'Valid', bgExpiry: '31.12.2027', ldApplicable: true, ldStatus: 'No Deduction', attachments: 5, orderValue: 7890000.00, bgCalculatedOn: 'Total Order Value', fivePercentOfOrder: 394500.00, previousCPBGDeducted: 142300.00, remainingToDeduct: 252200.00, cbgPercent: 5, ldSlaFlag: true, ldRate: 0.5, tdsRate: 2 },
+};
+
+export const lineItems = [
+  { item: '001', poNumber: '8200231872', poItem: '00010', glAccount: '6210100', material: 'SERVICE', description: 'ATTND CBL FAULT BY EXCAVN TRENCH<=10M', quantity: 1, unit: 'EA', netPrice: 41085.00, currency: 'INR', taxCode: 'G1', itemPostingDate: '01.07.2026' },
+  { item: '002', poNumber: '8200231872', poItem: '00020', glAccount: '6210100', material: 'SERVICE', description: 'Debris Removal by mech means', quantity: 3.800, unit: 'M3', netPrice: 12412.81, currency: 'INR', taxCode: 'G1', itemPostingDate: '01.07.2026' },
+  { item: '003', poNumber: '8200231872', poItem: '00030', glAccount: '6210200', material: 'SERVICE', description: 'Cbl Laying u/g in existing trench', quantity: 8, unit: 'M', netPrice: 4896.40, currency: 'INR', taxCode: 'G1', itemPostingDate: '01.07.2026' },
+  { item: '004', poNumber: '8200231872', poItem: '00040', glAccount: '6210200', material: 'SERVICE', description: 'Backfilling with Earth/Sand', quantity: 11.400, unit: 'M3', netPrice: 5362.53, currency: 'INR', taxCode: 'G1', itemPostingDate: '01.07.2026' },
+  { item: '005', poNumber: '8200231872', poItem: '00050', glAccount: '6210300', material: 'SERVICE', description: 'Earth berming/dressing of Cable Rte', quantity: 400, unit: 'BAG', netPrice: 8964.00, currency: 'INR', taxCode: 'G1', itemPostingDate: '01.07.2026' },
+  { item: '006', poNumber: '8200231872', poItem: '00060', glAccount: '6210400', material: 'SERVICE', description: 'TRANS SER CHARGES FOR CABLE WORK', quantity: 3, unit: 'TP', netPrice: 7843.50, currency: 'INR', taxCode: 'G1', itemPostingDate: '01.07.2026' },
+  { item: '007', poNumber: '8200231872', poItem: '00070', glAccount: '6210400', material: 'SERVICE', description: 'PROV DG SET & DIESEL FOR CBL WORK', quantity: 5, unit: 'SFT', netPrice: 7470.00, currency: 'INR', taxCode: 'G1', itemPostingDate: '01.07.2026' },
+  { item: '008', poNumber: '8200231872', poItem: '00080', glAccount: '6210100', material: 'SERVICE', description: 'TRIAL PIT FOR CABLE ROUTE SURVEY', quantity: 1, unit: 'EA', netPrice: 1643.40, currency: 'INR', taxCode: 'G1', itemPostingDate: '01.07.2026' },
+  { item: '009', poNumber: '8200231872', poItem: '00090', glAccount: '6210400', material: 'SERVICE', description: 'Services for DG Set Operation', quantity: 2, unit: 'SFT', netPrice: 2318.40, currency: 'INR', taxCode: 'G1', itemPostingDate: '01.07.2026' },
+];
+
+export const retentionConfig = [
+  { code: 'Z001', type: 'RETENTION : OTHER', applicable: false, rate: 0, status: 'N/A' },
+  { code: 'Z002', type: 'RETENTION : INSTALLATION', applicable: false, rate: 0, status: 'N/A' },
+  { code: 'Z003', type: 'RETENTION : COMMISSIONING', applicable: false, rate: 0, status: 'N/A' },
+  { code: 'Z004', type: 'RETENTION : PBG', applicable: false, rate: 0, status: 'N/A' },
+  { code: 'Z005', type: 'RETENTION : CPBG', applicable: true, rate: 10, status: 'Active' },
+  { code: 'Z006', type: 'RETENTION : SAFETY', applicable: true, rate: 2.5, status: 'Active' },
+  { code: 'Z007', type: 'RETENTION : LD', applicable: 'conditional', rate: 0, status: 'Conditional' },
+  { code: 'Z008', type: 'RETENTION : WARRANTY', applicable: false, rate: 0, status: 'N/A' },
+  { code: 'Z009', type: 'RETENTION : ADVANCE', applicable: false, rate: 0, status: 'N/A' },
+  { code: 'Z010', type: 'RETENTION : PAYMENT TERMS', applicable: true, rate: 0, status: 'Active' },
+];
+
