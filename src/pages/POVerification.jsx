@@ -5,7 +5,7 @@ import {
   Paperclip, CreditCard, Building2, Calendar, ClipboardList, Eye,
   Printer, ExternalLink, Calculator
 } from 'lucide-react';
-import { invoices, poDetails } from '../data/invoiceData';
+import { invoices, poDetails, vendorDetails } from '../data/invoiceData';
 
 const tabsList = [
   { id: 'overview', label: 'Overview', icon: FileText },
@@ -58,8 +58,6 @@ const defaultAttachmentFiles = [
 ];
 
 const defaultGst = {
-  vendorGstin: '27AABCA1234F1ZP',
-  companyGstin: '27AAACT2727Q1ZW',
   hsnCode: '998731',
   supplyPlace: 'Maharashtra (27)',
   taxCodeGst: 'V1 — Input Tax 18%',
@@ -82,12 +80,13 @@ export default function POVerification() {
   const milestones = po.deliveryMilestones || defaultDeliveryMilestones;
   const rawConditions = po.conditions || defaultConditions;
   const attachmentFiles = po.attachmentFiles || defaultAttachmentFiles;
+  const vendor = vendorDetails[invoice.vendorNum] || {};
   const rawGst = po.gstDetails || po.gst || defaultGst;
   const deliveryInfo = po.deliveryInfo || {};
 
   const gst = {
-    vendorGstin: rawGst.vendorGSTIN || rawGst.vendorGstin || '—',
-    companyGstin: rawGst.companyGSTIN || rawGst.companyGstin || '—',
+    vendorGstin: rawGst.vendorGSTIN || rawGst.vendorGstin || vendor.gstin || '—',
+    companyGstin: rawGst.companyGSTIN || rawGst.companyGstin || '27AAACT0054A1Z1',
     hsnCode: rawGst.hsnCode || '—',
     supplyPlace: rawGst.supplyPlace || '—',
     taxCodeGst: rawGst.taxCodeGst || po.taxCode || '—',

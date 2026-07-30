@@ -6,9 +6,9 @@ import {
   Hash, DollarSign, Building2, CheckSquare, User,
   Banknote, Scale, Info, CircleDot, ChevronUp, ChevronDown,
   ExternalLink, Calculator, Eye, MessageSquare, LayoutDashboard,
-  Settings, Loader2
+  Settings
 } from 'lucide-react';
-import { invoices, vendorDetails, recipientData, lineItems, processOptions } from '../data/invoiceData';
+import { invoices, vendorDetails, recipientData, lineItems, processOptions, poDetails } from '../data/invoiceData';
 
 const topTabs = [
   { id: 'detail', label: 'Show Detail Pane', icon: Eye },
@@ -40,7 +40,7 @@ export default function InvoicePosting() {
   const invoice = invoices.find(i => i.id === id) || invoices[1];
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000);
+    const timer = setTimeout(() => setLoading(false), 120000);
     return () => clearTimeout(timer);
   }, []);
   const vendor = vendorDetails[invoice.vendorNum] || vendorDetails['100015200'];
@@ -59,8 +59,9 @@ export default function InvoicePosting() {
   const totalLineItemAmount = lineItems.reduce((sum, item) => sum + item.netPrice, 0);
 
   const sesNumber = '300001245';
-  const vendorGstin = '27AABCA1234F1ZP';
-  const companyGstin = '27AAACT2727Q1ZV';
+  const po = poDetails[invoice.purchaseDoc];
+  const vendorGstin = vendor.gstin || po?.gstDetails?.vendorGSTIN || '—';
+  const companyGstin = po?.gstDetails?.companyGSTIN || '27AAACT0054A1Z1';
 
   const amountSplitRows = [
     { glAccount: '4000100', amount: invoice.amount * 0.6, taxCode: 'G1', costCenter: '1000-CC-OPS', description: 'Service charges - Operations' },
@@ -165,20 +166,16 @@ export default function InvoicePosting() {
             </div>
           </div>
 
-          {/* Loading area */}
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: '80px 20px',
-          }}>
-            <Loader2
-              size={28}
-              style={{
-                color: 'var(--cyan-accent)',
-                animation: 'spin 1s linear infinite',
-              }}
-            />
+          {/* Continue button */}
+          <div style={{ padding: '30px 22px 40px' }}>
+            <button
+              className="btn btn-gold"
+              onClick={() => setLoading(false)}
+              style={{ width: '100%', justifyContent: 'center', fontSize: 14, padding: '10px 24px' }}
+            >
+              <FileText size={16} />
+              Display Document
+            </button>
           </div>
 
           {/* SAP footer */}
@@ -200,12 +197,6 @@ export default function InvoicePosting() {
           </div>
         </div>
 
-        <style>{`
-          @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-          }
-        `}</style>
       </div>
     );
   }

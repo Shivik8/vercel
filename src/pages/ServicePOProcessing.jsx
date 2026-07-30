@@ -5,7 +5,7 @@ import {
   History, MessageSquare, Image, Calculator, Receipt,
   Scale, GitBranch, MoreHorizontal
 } from 'lucide-react';
-import { invoices, vendorDetails, recipientData, workflowHistory, lineItems } from '../data/invoiceData';
+import { invoices, vendorDetails, recipientData, workflowHistory, lineItems, poDetails } from '../data/invoiceData';
 
 const tabs = [
   { id: 'basic', label: 'Basic Data', icon: FileText },
@@ -24,6 +24,15 @@ export default function ServicePOProcessing() {
 
   const invoice = invoices.find(i => i.id === id) || invoices[1];
   const vendor = vendorDetails[invoice.vendorNum] || vendorDetails['100015200'];
+
+  const [transEvent, setTransEvent] = useState('invoice');
+  const origAmount = invoice.id === '5100034388' ? 10855.32 : invoice.amount;
+  const origRefDoc = invoice.id === '5100034388' ? 'TPCL-27/32' : invoice.refDoc;
+  const [invoiceAmount, setInvoiceAmount] = useState(origAmount);
+  const [invoiceAmountText, setInvoiceAmountText] = useState('');
+  const [isAmountFocused, setIsAmountFocused] = useState(false);
+  const [refDoc, setRefDoc] = useState(origRefDoc);
+  const [purchaseDoc, setPurchaseDoc] = useState(invoice.purchaseDoc);
 
   const formatAmount = (amount) => {
     return new Intl.NumberFormat('en-IN', {
@@ -180,7 +189,7 @@ export default function ServicePOProcessing() {
                   <div className="info-row">
                     <span className="info-label">Trans./event</span>
                     <span className="info-value">
-                      <select className="form-select" style={{ width: 200 }} defaultValue="invoice">
+                      <select className="form-select" style={{ width: 200 }} value={transEvent} onChange={e => setTransEvent(e.target.value)}>
                         <option value="invoice">Invoice</option>
                         <option value="credit">Credit Memo</option>
                       </select>
@@ -188,15 +197,70 @@ export default function ServicePOProcessing() {
                   </div>
                   <div className="info-row">
                     <span className="info-label">Invoice Amount</span>
-                    <span className="info-value large">{formatAmount(invoice.amount)} INR</span>
+                    <span className="info-value">
+                      <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                        <input
+                          className="form-input"
+                          type="text"
+                          value={isAmountFocused ? invoiceAmountText : formatAmount(invoiceAmount)}
+                          onFocus={e => {
+                            setIsAmountFocused(true);
+                            setInvoiceAmountText(String(invoiceAmount));
+                          }}
+                          onBlur={e => {
+                            setIsAmountFocused(false);
+                            const num = parseFloat(invoiceAmountText);
+                            if (!isNaN(num) && num > 0) setInvoiceAmount(num);
+                            else setInvoiceAmountText(String(invoiceAmount));
+                          }}
+                          onChange={e => {
+                            const val = e.target.value.replace(/[^0-9.]/g, '');
+                            setInvoiceAmountText(val);
+                            const num = parseFloat(val);
+                            if (!isNaN(num)) setInvoiceAmount(num);
+                          }}
+                          style={{
+                            width: 200,
+                            fontFamily: "'JetBrains Mono', monospace",
+                            fontSize: 16,
+                            fontWeight: 700,
+                            color: 'var(--cyan-accent)',
+                          }}
+                        />
+                        <span style={{ fontSize: 14, fontWeight: 600, color: 'var(--cyan-accent)' }}>INR</span>
+                      </div>
+                    </span>
                   </div>
                   <div className="info-row">
                     <span className="info-label">Reference Doc #</span>
-                    <span className="info-value mono">{invoice.refDoc}</span>
+                    <span className="info-value">
+                      <input
+                        className="form-input"
+                        type="text"
+                        value={refDoc}
+                        onChange={e => setRefDoc(e.target.value)}
+                        style={{
+                          width: 200,
+                          fontFamily: "'JetBrains Mono', monospace",
+                        }}
+                      />
+                    </span>
                   </div>
                   <div className="info-row">
                     <span className="info-label">Purchase Doc #</span>
-                    <span className="info-value mono gold">{invoice.purchaseDoc}</span>
+                    <span className="info-value">
+                      <input
+                        className="form-input"
+                        type="text"
+                        value={purchaseDoc}
+                        onChange={e => setPurchaseDoc(e.target.value)}
+                        style={{
+                          width: 200,
+                          fontFamily: "'JetBrains Mono', monospace",
+                          color: 'var(--cyan-accent)',
+                        }}
+                      />
+                    </span>
                   </div>
                 </div>
               </div>
@@ -310,11 +374,11 @@ export default function ServicePOProcessing() {
                 </div>
                 <div className="info-row">
                   <span className="info-label">GST Number</span>
-                  <span className="info-value mono">27AABCA1234F1ZP</span>
+                  <span className="info-value mono">{vendor.gstin || '—'}</span>
                 </div>
                 <div className="info-row">
                   <span className="info-label">HSN/SAC Code</span>
-                  <span className="info-value mono">998731</span>
+                  <span className="info-value mono">{(poDetails[invoice.purchaseDoc]?.gstDetails?.hsnCode) || '998731'}</span>
                 </div>
               </div>
             </div>
